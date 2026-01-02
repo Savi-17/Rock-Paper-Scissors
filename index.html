@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+
+    <!-- Mobile responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="buttons">
+      <button data-choice="rock">✊ Rock</button>
+      <button data-choice="paper">✋ Paper</button>
+      <button data-choice="scissors">✌ Scissors</button>
+    </div>
+
+    <div class="score">
+      <p>You: <span id="userScore">0</span></p>
+      <p>Computer: <span id="computerScore">0</span></p>
+    </div>
+
+    <button id="reset">🔄 Reset Game</button>
+
+    <p id="result">Make your move 🎮</p>
+
+    <ul id="history"></ul>
+
+    <!-- Sound effects -->
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="loseSound" src="lose.mp3"></audio>
+    <audio id="drawSound" src="draw.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
